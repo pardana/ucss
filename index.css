@@ -1,0 +1,17 @@
+h1{
+    color: aqua;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+p{
+    color: brown;
+    text-align: justify;
+    font-weight: 600;
+    letter-spacing: 1px; /* per huruf */
+    word-spacing: 0px; /* per kata */
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+}
