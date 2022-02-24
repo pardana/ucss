@@ -15,3 +15,10 @@ p{
     line-height: 2;
     font-family: 'Poppins', sans-serif;
 }
+
+#second-para{
+    /* border-style: dashed;
+    border-width: 6px;
+    border-color: red; */
+    border: dotted 3px red;
+}
