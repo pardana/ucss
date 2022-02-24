@@ -24,3 +24,15 @@ p{
     padding: 16px 20px 24px 28px;
     margin: 48px 24px 32px 60px;
 }
+
+#ordered-list{
+    list-style-type: lower-roman;
+    width: 400px;
+    list-style-position: inside;
+}
+
+#unordered-list{
+    list-style-type: circle;
+    list-style: none;
+    padding-left: 10px;
+}
