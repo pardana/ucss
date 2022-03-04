@@ -132,3 +132,17 @@ p{
 .label{
     padding-left: 7px;
 }
+
+.image-item{
+    width: 250px;
+    height: 180px;
+}
+
+.image-wrapper{
+    display: inline;
+}
+
+.menu-item{
+    display: block;
+    display: none;
+}
