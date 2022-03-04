@@ -146,3 +146,16 @@ p{
     display: block;
     display: none;
 }
+
+#span1{
+    background-color: lightblue;
+    height: 100px;
+    width: 200px;
+}
+
+#span2{
+    background-color: lightcoral;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+}
