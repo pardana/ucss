@@ -7,6 +7,10 @@ body{
     background-color: lightblue;
     box-sizing: border-box;
     padding: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .item{
