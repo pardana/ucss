@@ -4,16 +4,14 @@ body{
 
 #container{
     width: 100vw;
-    height: 700px;
+    height: 400px;
     background-color: lightblue;
     box-sizing: border-box;
     padding: 32px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 .item{
@@ -23,4 +21,14 @@ body{
     padding: 32px;
     font-size: 24px;
     text-align: center;
+    flex-basis: 120px;
+}
+
+.item:nth-child(odd){
+    align-self: flex-start;
+}
+
+.item:nth-child(even){
+    background-color: bisque;
+    align-self: center;
 }
