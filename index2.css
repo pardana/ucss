@@ -4,13 +4,15 @@ body{
 
 #container{
     width: 100vw;
+    height: 100vh;
     background-color: lightblue;
     box-sizing: border-box;
     padding: 32px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .item{
