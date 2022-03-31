@@ -181,3 +181,13 @@ p{
 .image{
     width: 100%;
 }
+
+body{
+    margin: 0;
+    background-image: url('http://geekchicpro.com/wp-content/uploads/gr/grass-and-sky-vector-wallpapers-widescreen-on-wallpaper-p-hd.jpg');
+    background-size: cover;
+}
+
+img{
+    width: 300px;
+}
