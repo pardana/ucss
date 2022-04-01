@@ -1,209 +1,26 @@
-h1{
-    color: aqua;
-    text-align: justify;
-    font-style: italic;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-p{
-    color: brown;
-    text-align: justify;
-    font-weight: 600;
-    letter-spacing: 1px; /* per huruf */
-    word-spacing: 0px; /* per kata */
-    line-height: 2;
-    font-family: 'Poppins', sans-serif;
-}
-
-#second-para{
-    /* border-style: dashed;
-    border-width: 6px;
-    border-color: red; */
-    border: solid 3px red;
-    padding: 16px 20px 24px 28px;
-    margin: 48px 24px 32px 60px;
-}
-
-#ordered-list{
-    list-style-type: lower-roman;
-    width: 400px;
-    list-style-position: inside;
-}
-
-#unordered-list{
-    list-style-type: circle;
-    list-style: none;
-    padding-left: 10px;
-}
-
-#topbar{
-    background-color: lightblue;
-    padding: 24px 48px;
-}
-
-.menu-item{
-    font-size: 26px;
-    margin-right: 24px;
-    color: black;
-    text-decoration: none;
-}
-
-.menu-item:link{
-    color: blue;
-}
-
-.menu-item:visited{
-    color: green;
-}
-
-.menu-item:hover{
-    color: red;
-}
-
-.menu-item:active{
-    color: purple;
-}
-
-#btn-login{
-    background-color: lightcoral;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    cursor: pointer;
-}
-
-#btn-login:hover{
-    background-color: coral;
-    color: white;
-}
-
-#btn-signup{
-    background-color: white;
-    border: 2px solid lightcoral;
-    padding: 10px 15px;
-    border-radius: 8px;
-    outline: none;
-    cursor: pointer;
-}
-
-#btn-signup:hover{
-    background-color: coral;
-}
-
-#btn-disabled{
-    background-color: lightcoral;
-    padding: 10px 15px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    cursor: not-allowed;
-    opacity: 0.5;
-}
-
-#btn-facebook{
-    background-color: #1877F2;
-    padding: 10px 15px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    color: white;
-}
-
-#btn-google{
-    background-color: coral;
-    padding: 10px 15px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    color: white;
-}
-
-#btn-github{
+body{
     background-color: black;
-    padding: 10px 15px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
+}
+
+h1{
     color: white;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 48px;
 }
 
-.label{
-    padding-left: 7px;
+#grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
-.image-item{
-    width: 250px;
-    height: 180px;
-}
-
-.image-wrapper{
-    display: inline;
-}
-
-.menu-item{
-    display: block;
-    display: none;
-}
-
-#span1{
-    background-color: lightblue;
-    height: 100px;
-    width: 200px;
-}
-
-#span2{
-    background-color: lightcoral;
-    display: inline-block;
-    height: 100px;
-    width: 200px;
-}
-
-#div1{
-    width: 300px;
-    height: 300px;
-    font-size: 24px;
-    background-color: lightcoral;
-    padding: 60px;
-}
-
-#div2{
-    width: 300px;
-    height: 300px;
-    font-size: 24px;
-    background-color: burlywood;
-    margin-top: 24px;
-    padding: 80px;
+.movie-poster{
+    width: 100%;
+    max-width: 400px;
     box-sizing: border-box;
 }
 
-.image{
-    width: 100%;
-}
-
-body{
-    margin: 0;
-    background-image: url('https://wallpaperaccess.com/full/90278.jpg');
-    background-size: cover;
-}
-
-img{
-    width: 300px;
-    position: absolute;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    animation: fly 5s ease-in;
-}
-
-@keyframes fly{
-    0%{
-        transform: translate(-50%, 0);
-    }
-
-    100%{
-        transform: translate(-50%, -100vh);
-    }
+.movie-poster:hover{
+    animation: zoom 1s forwards;
 }
