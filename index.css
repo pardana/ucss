@@ -1,52 +1,69 @@
-body{
-    background-color: black;
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { height: 460px; grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 2px;
+  background-color: #2196F3;
+  padding: 10px;
 }
 
-h1{
-    color: white;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    text-align: center;
-    letter-spacing: 4px;
-    font-size: 48px;
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
-#grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 16px;
-}
-
-.movie-poster{
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
-}
-
-.movie-poster:hover{
-    animation: zoom 1s forwards;
-}
-
-@keyframes zoom {
-    0%{
-        transform: scale(1);
-        box-shadow: 0 2px 5px #ccc;
-    }
-
-    100%{
-        transform: scale(1.1);
-    }
-}
-
+/*iPad Air*/
 @media (max-width: 900px) {
-    #grid-container{
+    .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'menu main main main main main'
+          'right right right right right right'
+          'footer footer footer footer footer footer';
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
     }
+
+    .grid-container > div {
+        background-color: rgba(255, 255, 0, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
 }
 
+/*iPhone*/
 @media (max-width: 400px) {
-    #grid-container{
+    .grid-container {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-areas:
+          'header header header header header header'
+          'menu menu menu menu menu menu'
+          'main main main main main main'
+          'right right right right right right'
+          'footer footer footer footer footer footer';
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
     }
+
+    .grid-container > div {
+        background-color: rgba(0, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
 }
