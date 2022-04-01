@@ -12,7 +12,8 @@ h1{
 
 #grid-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 16px;
 }
 
 .movie-poster{
@@ -23,4 +24,22 @@ h1{
 
 .movie-poster:hover{
     animation: zoom 1s forwards;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+        box-shadow: 0 2px 5px #ccc;
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 900px) {
+    #grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
