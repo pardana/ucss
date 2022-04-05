@@ -12,18 +12,24 @@ header{
 }
 
 nav{
+  background-color: white;
+  width: 100%;
+  height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  padding: 0px 28px;
 }
 
-#left-menu{
-  display: flex;
-  align-items: center;
+div{
+  display: block;
 }
 
-#right-menu{
-  display: flex;
-  align-items: center;
+.dropdown-wrapper{
+  display: inline-block;
+  position: relative;
 }
 
 #logo{
