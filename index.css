@@ -1,69 +1,60 @@
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { height: 460px; grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main main right'
-    'menu main main main main right'
-    'footer footer footer footer footer footer';
-  gap: 2px;
-  background-color: #2196F3;
-  padding: 10px;
+body{
+  margin: 0;
+  background-color: white;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+#topbar{
+  margin: 0;
+  background-color: white;
+  padding: 8px 40px;
+  top: 0px;
+  position: sticky;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-menu{
+  display: flex;
+  align-items: center;
+}
+
+#right-menu{
+  display: flex;
+  align-items: center;
+}
+
+#logo{
+  width: 40px;
+  height: 40px;
+}
+
+.menu-item{
+  margin: 0px 10px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 14px;
+  font-weight: 600px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-buynow{
+  font-family: 'Poppins', sans-serif;
+  background-color: #aad236;
+  font-size: 12px;
+  color: white;
+  font-weight: 600px;
 }
 
 /*iPad Air*/
 @media (max-width: 900px) {
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-          'header header header header header header'
-          'menu main main main main main'
-          'right right right right right right'
-          'footer footer footer footer footer footer';
-        gap: 10px;
-        background-color: #2196F3;
-        padding: 10px;
-    }
-
-    .grid-container > div {
-        background-color: rgba(255, 255, 0, 0.8);
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px;
-      }
+    
 }
 
 /*iPhone*/
 @media (max-width: 400px) {
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-          'header header header header header header'
-          'menu menu menu menu menu menu'
-          'main main main main main main'
-          'right right right right right right'
-          'footer footer footer footer footer footer';
-        gap: 10px;
-        background-color: #2196F3;
-        padding: 10px;
-    }
-
-    .grid-container > div {
-        background-color: rgba(0, 255, 255, 0.8);
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px;
-      }
+    
 }
