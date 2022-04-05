@@ -32,19 +32,45 @@ div{
   position: relative;
 }
 
+.dropdown{
+  width: 150px;
+  border-top: 2px solid #aad236;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 5px #ccc;
+  display: none;
+}
+
+.dropdown a{
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.dropdown a:last-of-type{
+  border: 0px;
+}
+
 #logo{
   width: 40px;
   height: 40px;
 }
 
 .menu-item{
-  margin: 0px 10px;
+  margin-right: 24px;
   font-family: 'Poppins', sans-serif;
   color: black;
   font-size: 14px;
-  font-weight: 600px;
+  font-weight: 100px;
   cursor: pointer;
   text-decoration: none;
+}
+
+.menu-item i{
+  padding-left: 4px;
 }
 
 .btn-primary{
